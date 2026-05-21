@@ -354,6 +354,9 @@
   .ml-\[20px\] {
     margin-left: 20px;
   }
+  .\!hidden {
+    display: none !important;
+  }
   .flex {
     display: flex;
   }
@@ -1016,6 +1019,11 @@
   .lg\:max-w-300 {
     @media (width >= 64rem) {
       max-width: calc(var(--spacing) * 300);
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .lg\:items-center {
